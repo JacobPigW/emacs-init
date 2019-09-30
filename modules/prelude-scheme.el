@@ -43,6 +43,8 @@
 (setq geiser-repl-history-filename
       (expand-file-name "geiser-history" prelude-savefile-dir))
 
+(setq geiser-active-implementations '(chez))
+
 (add-hook 'scheme-mode-hook (lambda () (run-hooks 'prelude-lisp-coding-hook)))
 
 (provide 'prelude-scheme)
